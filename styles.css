@@ -1,0 +1,114 @@
+:root {
+    --Principal: #0a014f;
+    --Secundario: #456990;
+    --TextB: #07020D;
+    --TextW: #EEE5E9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--TextW);
+    background-color: var(--Principal);
+}
+
+header {
+    background-color: var(--Principal);
+    padding: 20px;
+    text-align: center; /* Centrar el título */
+}
+
+/* Flexbox para centrar el logo y la navegación */
+.navbar {
+    display: flex;
+    justify-content: center; /* Centramos la barra de navegación */
+    align-items: center;
+    gap: 50px; /* Espacio entre el logo y los elementos de la navegación */
+    margin-bottom: 20px; /* Separar la barra de navegación del título */
+}
+
+/* Logo en la navegación */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 60px; /* Ancho del logo */
+    height: auto;
+}
+
+/* Navegación centrada */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: var(--TextW);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--Secundario); /* Cambiar color en hover */
+}
+
+/* Título principal centrado */
+.main-title {
+    color: var(--TextW);
+    font-size: 2rem; /* Tamaño del título */
+    margin-top: 10px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--Secundario);
+    padding: 100px 20px;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero-form {
+    background-color: var(--Principal);
+    padding: 20px;
+    border-radius: 10px;
+    width: 35%;
+    color: var(--TextW);
+}
+
+.hero-form h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.hero-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-form label {
+    margin-bottom: 5px;
+}
+
