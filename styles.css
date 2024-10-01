@@ -20,30 +20,28 @@ body {
 header {
     background-color: var(--Principal);
     padding: 20px;
-    text-align: center; /* Centrar el título */
+    text-align: center;
 }
 
 /* Flexbox para centrar el logo y la navegación */
 .navbar {
     display: flex;
-    justify-content: center; /* Centramos la barra de navegación */
+    justify-content: center;
     align-items: center;
-    gap: 50px; /* Espacio entre el logo y los elementos de la navegación */
-    margin-bottom: 20px; /* Separar la barra de navegación del título */
+    gap: 50px;
+    margin-bottom: 20px;
 }
 
-/* Logo en la navegación */
 .logo {
     display: flex;
     align-items: center;
 }
 
 .logo-img {
-    width: 60px; /* Ancho del logo */
+    width: 60px;
     height: auto;
 }
 
-/* Navegación centrada */
 .nav-links {
     list-style: none;
     display: flex;
@@ -58,13 +56,12 @@ header {
 }
 
 .nav-links a:hover {
-    color: var(--Secundario); /* Cambiar color en hover */
+    color: var(--Secundario);
 }
 
-/* Título principal centrado */
 .main-title {
     color: var(--TextW);
-    font-size: 2rem; /* Tamaño del título */
+    font-size: 2rem;
     margin-top: 10px;
 }
 
@@ -112,3 +109,111 @@ header {
     margin-bottom: 5px;
 }
 
+.hero-form input,
+.hero-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.hero-form button {
+    padding: 10px;
+    background-color: var(--Secundario);
+    color: var(--TextW);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background-color: var(--Principal);
+}
+
+.service-card {
+    background-color: var(--Secundario);
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+footer {
+    background-color: var(--Principal);
+    text-align: center;
+    padding: 20px;
+    color: var(--TextW);
+}
+
+/* Media queries para dispositivos móviles */
+
+/* Para pantallas de hasta 768px */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 50px 20px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hero-form {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .main-title {
+        font-size: 1.8rem;
+    }
+}
+
+/* Para pantallas de hasta 480px */
+@media (max-width: 480px) {
+    .logo-img {
+        width: 50px;
+    }
+
+    .main-title {
+        font-size: 1.5rem;
+    }
+
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .hero-form {
+        padding: 15px;
+    }
+
+    .service-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+}
