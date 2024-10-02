@@ -69,12 +69,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--Secundario);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("imgs/drone.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
     padding: 100px 20px;
 }
 
 .hero-content {
     max-width: 50%;
+    color: var(--TextW)
 }
 
 .hero-content h2 {
@@ -148,6 +151,13 @@ footer {
     text-align: center;
     padding: 20px;
     color: var(--TextW);
+}
+.btn {
+    color: white;
+    background-color: var(--Principal);
+    padding: 15px;
+    border-radius: .5rem;
+    text-decoration: none;
 }
 
 /* Media queries para dispositivos móviles */
